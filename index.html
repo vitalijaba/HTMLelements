@@ -2,9 +2,134 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>nnn</title>
+    <meta name="description" content="HTML elementai tai pradine svetaines testavimo versija">
+    <meta name="author" content="Vitalija Ba">
+    <title>HTML elementai</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <noscript>Ijunkite javascript</noscript>
+    <!-- sitas base tagas skirtas nurodyti koks yra aplikacijos domenas
+    <base href="http:/localhost:3000/" target="_blank">-->
+<!-- stilius    <style media="screen">
+      body { background-color: #98ff98; }
+    </style>-->
+<!--skriptas
+    <script type="text/javascript" src="/scripts/main.js">
+      console.log("labas");
+    </script>-->
   </head>
   <body>
+<h1>Puslapio pavadinimas</h1>
+<hr>
+<p>Pirma dalis</p>
+<h2>Pirmos pastraipos pirmas headingas</h2>
+<h2>Pirmos pastraipos antras headingas</h2>
+  <h3>Pirmos pastraipos trecias headingas</h3>
+<p>Antra pastraipa</p>
+Line break <br>
+Horizontal line<hr>
+<p>Trecia pastraipa</p>
+<br>
+<b>Lorem ipsum dolor sit amet,</b> consectetur adipisicing elit, sed do eiusmod tempor <u>incididunt ut labore</u> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <i>laboris nisi ut aliquip</i> ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br> <br> <strong>Labai idomus patarimai</strong><br><br>
+<span>Teksto dalies isvaizda noresim lengviau pakeisti. Sito tago daznas naudojimas susilpnina skaitomuma kodo. Juo tiesiog galima issiskirti sakini, jo pakeitima galim aprasyti per css</span>
+<hr>
+<code>Code tai pritaikomas kitas sriftas, toks kaip githube pvz, kode naudojamas monospace fontas, ur kiekvienas simbolis yra tokio pacio plocio. GRAZU!!!!!</code>
+<h2>Dabar apie lenteles - apie tikras lenteles</h2>
+
+th reiskia kad ta cele yra headerio cele, o td yra paprasta cele
+
+<table>
+  <thead>
+    <tr>
+      <td>Vardas</td>
+      <td>Programavimo patritis</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vitalija</td>
+      <td>1 men</td>
+    </tr>
+  </tbody>
+<tfoot>
+  <tr>
+    <td colspan="2">Lenteles paaiskinimas</td>
+  </tr>
+</tfoot>
+</table>
+
+<h1>DABAR IDESIM PAVEISKLIUKA</h1>
+
+<img src="\images\debesys.jpg" alt="debesys">
+<hr>
+
+<h3>FORMOS APRASYMAS</h3>
+<p>Yra metodas ir action</p><br>
+<p>For pazymejimu galima pazymeti raktazodius, o input irgi raktazodziai. tokiu atveju label ir for susisieja su id.</p><br>
+<p>for reiksme turi buti tokia pati kaip inut id reiksme</p>
+
+<p>yra keletas metodu kuriais galima kreiptsi i serveri. defaultinis yra post nes reikia kazkur siusti duomenis. siuo atveju padarysim metoda get, kad galetumem kreiptis url adresu. post metodu siunciant duomenis serversi turi jau moket priimti musu duomeis ir negali siusti tu dumenu tiesiogiai per url adresa. juos reikia iformuoti i json ar kita, arba xml, kad ji priimtubackendas arba programa. action="index.php"/ . ivedus form action google era submit mygtuko. reikia kito input type</p>
+
+<form action="https://www.google.lt/search" method="get">
+<label for="raktazodziai">Iveskite paieskos raktazodzius</label>
+  <input id="raktazodziai" type="text" name="q" value="Reiksme"><br>
+  <label for="accept">Sutinku su salygomis</label>
+  <input id="accept" type="checkbox" name="Accept" value="Yes">
+  <input type="submit" name="" value="Search"><br>
+<label for="password">Jusu slaptazodis</label>
+  <input id="password" type="password" name="password"><br>
+  <label for="radio-1">Moteris</label>
+  <input id="radio-1" type="radio" name="radio">
+  <label for="radio-2">Vyras</label>
+  <input id="radio-2" type="radio" name="radio">
+</form>
+
+
+<h2>EMAILO FORMA</h2>
+<fieldset>
+<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name" required><br>
+E-mail:<br>
+<input type="text" name="mail" required=""><br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset"><br>
+<label for="file">File</label>
+<input id="file" type="file" name="file"><br><br><br>
+</form>
+</fieldset>
+<br>
+<br>
+<fieldset>
+
+  <form>
+
+<select class="" name="country">
+  <optgroup label="EU">
+    <option value="lt">Lietuva</option>
+      <option value="uk">Anglija</option>
+            <option value="ee">Estija</option>
+
+
+  </optgroup>
+  <optgroup label="AMERIKOS SALYS">
+      <option value="jav">Amerika</option>
+        <option value="br">Brazilija</option>
+  </optgroup>
+
+</select>
+</form>
+</fieldset>
+
+<form class="" action="index.html" method="post">
+
+</form>
+<br>
+<br>
+<br>
+
+<script type="text/javascript" href="/scripts/main.js"></script>
 
   </body>
 </html>
