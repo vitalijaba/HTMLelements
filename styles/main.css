@@ -1,0 +1,14 @@
+body {
+  background-color: #98ff98;
+}
+strong {
+  font-size: 150%;
+  color: blue;
+}
+span {
+  color: green;
+}
+
+table, th, td {
+   border: 1px solid black;
+}
